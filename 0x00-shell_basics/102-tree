@@ -1,2 +1,3 @@
 #!/bin/bash
-mkdir -p 102-tree
+mkdir welcome welcome/to welcome/to/school
+e
