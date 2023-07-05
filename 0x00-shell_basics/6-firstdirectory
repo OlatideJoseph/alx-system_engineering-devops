@@ -1,2 +1,8 @@
 #!/bin/bash
-mkdir my_first_directory /tmp/
+if [-d "/tmp/"];then
+        mkdir my_first_directory /tmp/
+	exit 1;
+else
+	mkdir tmp
+	mkdir my_first_directory /tmp/
+fi
