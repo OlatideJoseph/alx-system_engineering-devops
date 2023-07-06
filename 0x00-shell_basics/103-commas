@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a | sort -k1,1 -t. -n | tr '\n' ',' | sed 's/,$/\n/' | sed 's/[^,]*/&\//g' | sed 's/\///g' | sed 's/\.\//\.\//g' | sed 's/\.\.\//\.\.\//g'
+ls -a | sort -k1,1 -t. -n | tr '\n' ',' | sed 's/,$/\n/' | sed 's/[^,]*/&\//g' | sed 's/\///g' | sed 's/\.\//\.\//g' | sed 's/\.\.\//\.\.\//g' | sed 's/,/, /g'
