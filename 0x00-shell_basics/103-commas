@@ -1,3 +1,2 @@
 #!/bin/bash
 ls -ap1 | awk '{if ($0 ~ /^(\.\/|\.\.\/)$/) {printf "%s, ", $0} else {printf "%s%s, ", (NR>2?",":""), $0}} END {print ""}'
-
