@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$(tail -n 3)" >> iacta
+echo "$(cat iacta | tail -n 1)" >> iacta
